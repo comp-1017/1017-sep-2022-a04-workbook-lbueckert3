@@ -24,19 +24,33 @@
             paragaraph tag : is a <p> tag, this tag indicates the contents to a paragraph
             
         -->
+    <header>
         <h1>Basic HTML tags</h1>
         
-        <h3>Paragraph Tag</h3>
+        <nav>
+            <h2>Nav tags are optional</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../semantics.html">Semantics</a></li>
+                <li><a href="#">Html Basics</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <section>
+        <h2>Paragraph Tag</h2>
             <p>This page demonstrates the basic structure of a HTML webpage. The head area has the browse title tab 
             specified, as well as the charset defined. The body is demonstrating the h1 header tag and the paragragh tag
             </p>
             <p>This is another paragraph, wooohooo yeehaw</p>
+        </section>
         <!-- 
             if you wish to use a component of a reserve tag, or the whole tag, it would not display as regular text. instead, you
                 can use special character strings to represent components of the tag such as the < (&lt;) and the > (&gt;) symbols
         -->
-        
-        <h3>List tags &lt;ol&gt; &lt;ul&gt;</h3>
+        <section>
+        <h2>List tags &lt;ol&gt; &lt;ul&gt;</h2>
         <!-- 
             block tag
             create an order list (numbered) using <ol>
@@ -62,8 +76,9 @@
             <li>default display is a bulleted list</li>
             <li>we will see later how to remove these bullets with css</li>
         </ul>
-
-        <h3>Anchor Tag (aka; Linking to another page)</h3>
+    </section>
+    <section>
+        <h2>Anchor Tag (aka; Linking to another page)</h2>
         <!-- blocked paired
             This is an anchor tag and is incorrectly often refered to as the link tag.
             One should not use the link tag, because there is actually a <link> tag used in the <head> section.
@@ -77,8 +92,11 @@
                     _blank will open a new browser tab
         -->
         <a href="https://www.nait.ca" target="_blank">Go to NAIT</a>
+    </section>
 
-        <h3>Image Tag</h3>
+    <section>
+
+        <h2>Image Tag</h2>
         <!--
             an empty (void) tag
             it is NOT a paired 
@@ -112,6 +130,8 @@
         <h4>Image tag with Link</h4>
         <a href="http://adobe.com" target="_blank"><img src="img/photoshop.png" alt="logo photoshop" 
             title="a logo image of photoshop" width="50" height="50"></a>
+    </section>
     </body>
+    </main>
         
 </html>
