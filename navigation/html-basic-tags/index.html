@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+            <!-- 
+                this is a comment, it is not code or content
+
+                title tag : this tag supplies the content for the browser tag
+                meta tag : serveral versions and options on this tag
+                    : charset - specifies the set of characters to be used by the web page
+                    : name= and content= - name allows for a specific item, content is the content(text)
+                the tag elements in the head area are not displayed on the webpage, they are not considered part of the page content, 
+                they are used by the internet and browser to manage the webpage
+            -->
+            <title>Basic HTML structure</title>
+            <meta charset="utf-8">
+            <meta name="author" content="Lindsay Bueckert">
+    </head>
+    <body>
+        <!-- 
+            Items in this area are intented for display (content) on the webpage
+
+            header tag h1 throu h6 : these are titles/headlines, importance is 1 greatest, 6 least 
+            
+            paragaraph tag : is a <p> tag, this tag indicates the contents to a paragraph
+            
+        -->
+        <h1>Basic HTML tags</h1>
+        
+        <h3>Paragraph Tag</h3>
+            <p>This page demonstrates the basic structure of a HTML webpage. The head area has the browse title tab 
+            specified, as well as the charset defined. The body is demonstrating the h1 header tag and the paragragh tag
+            </p>
+            <p>This is another paragraph, wooohooo yeehaw</p>
+        <!-- 
+            if you wish to use a component of a reserve tag, or the whole tag, it would not display as regular text. instead, you
+                can use special character strings to represent components of the tag such as the < (&lt;) and the > (&gt;) symbols
+        -->
+        
+        <h3>List tags &lt;ol&gt; &lt;ul&gt;</h3>
+        <!-- 
+            block tag
+            create an order list (numbered) using <ol>
+            create an unordered list (bulleted) using <ul>
+            items in the list are indicated using the line item <li>
+        -->
+        <ol>
+            <li>Add extension Live Server for Go Live executions from VSC</li>
+            <li>Open extensions using 5th icon on left by menu</li>
+            <li>Either search for Live Server OR select if seen in list</li>
+            <li>Press Install</li>
+            <li>To use</li>
+                <ol>
+                    <li>open an HTML page</li>
+                    <li>make any adjustments</li>
+                    <li>save adjustments</li>
+                    <li>look to bottom right on blue status line for "Go Live" and press</li>
+                    <li>make additional adjustments, save and return to Browser to see updates</li>
+                </ol>
+        </ol>
+        <ul>
+            <li>this is an unordered list</li>
+            <li>default display is a bulleted list</li>
+            <li>we will see later how to remove these bullets with css</li>
+        </ul>
+
+        <h3>Anchor Tag (aka; Linking to another page)</h3>
+        <!-- blocked paired
+            This is an anchor tag and is incorrectly often refered to as the link tag.
+            One should not use the link tag, because there is actually a <link> tag used in the <head> section.
+            The anchor tag can take you to a different location whether it be on a different website, different page in the current website,
+                or a different location on the current page.    
+                
+            Parameters:
+                href: points to the desired location
+                target: indicates the browser page display option
+                    default is same display page tab
+                    _blank will open a new browser tab
+        -->
+        <a href="https://www.nait.ca" target="_blank">Go to NAIT</a>
+
+        <h3>Image Tag</h3>
+        <!--
+            an empty (void) tag
+            it is NOT a paired 
+            An image tag does not have a closing tag
+            the image tag has NO content, however, it does have parameters
+
+            parameters:
+                src="relative web site location"
+                alt="printable text if the image is not found at src"
+                [title="tool tip text for the image"]
+
+            Absolute addressing is a complete fixed file path, that includes your drive:/folder/...folder/filename.ext
+            A Relative Address begins at a specified point. For websites, it is considered the "top of the website"
+                reference to the desired filename is done by specifying the appropriate folder path to the desired file.
+            NO DRIVE LETTER
+
+            Movement within a relative address
+                if only the filename is given, the location is within the same folder.
+                movement down the file structure is by /foldername
+                movement up the file structure is by using .. for each folder level to ascend
+            
+            same folder
+                ="filename.ext"
+            lower folder
+                ="nextleveldownfoldername/nextleveldownfoldername/.../filename.ext"
+            from one lower folder to another lower folder on a different branch
+             (.. for each level that needs to be ascended)
+                ="../../../nextleveldownfoldername/filename.ext"
+        -->
+        <img src="img/photoshop.png" alt="logo photoshop" title="a logo image of photoshop">
+        <h4>Image tag with Link</h4>
+        <a href="http://adobe.com" target="_blank"><img src="img/photoshop.png" alt="logo photoshop" 
+            title="a logo image of photoshop" width="50" height="50"></a>
+    </body>
+        
+</html>
