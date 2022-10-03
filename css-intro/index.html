@@ -19,7 +19,41 @@
             </nav>
         </header>
         <main>
-            
+            <h2>CSS Coding Styles</h2>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td>Browser Defaults</td>
+                        <td width="400px">you have not supplied any css code</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Inline</td>
+                        <td>this is for a single specific element (tag) instance. The element contains a parameter called style=""</td>
+                        <td>style="rule; [rule; ...]"</td>
+                        <td>style="color:red; width:50px;"</td>
+                    </tr>
+                    <tr>
+                        <td>Embedded</td>
+                        <td>Coded in your head area of the webpage. Is started with the style element and contains the selectors and rules for the desired css. 
+                            Applies only to the physical page where the code is placed. Affects all selectors on the page.</td>
+                        <td>&lt;style&gt;<br />selector {rule; [rule; ...]<br />
+                            [selector {rule; [rule; ...]} ...]<br />&lt;/style&gt;</td>
+                        <td>&lt;style&gt;<br />p {font-size:large; font-weight:bold;}<br />
+                            blockquote {width:350px;}<br />&lt;/style&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Stylesheet</td>
+                        <td>similiar to embedded, however the selectors and rules are coded in a separate physcial file. This file can be shared thorughout 
+                            the entire website. Thus, all css is in one common place.
+                        </td>
+                        <td>selector {rule; [rule; ...]<br />
+                            [selector {rule; [rule; ...]} ...]</td>
+                        <td>p {font-size:large; font-weight:bold;}<br />
+                            blockquote {width:350px;}</td>
+                    </tr>
+                </tbody>
         </main>
         <footer>
             
