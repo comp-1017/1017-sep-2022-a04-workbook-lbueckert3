@@ -1,0 +1,90 @@
+footer {
+    background-color: black;
+    color: yellow;
+}
+
+/* 
+    make a specific class with your own css rule
+*/
+.nav-background {
+    background-color: #ddd;
+}
+
+
+/* 
+    use decendant selectors 
+    you use a drill down approach to isolate the html you wish to 
+    target with your rules
+
+    example; within the nav area, the URL is to get the following rules.
+*/
+
+nav ul {
+    background-color: #dddddd;
+}
+
+nav ul li {
+    border-bottom: 1px solid #333333
+}
+
+/* 
+    to remove the underline of an anchor tag, we are going to use 
+    "text-decoration; none;" 
+    change the txt colour of the anchor tag to #333
+    appy only to the navigation menu
+*/
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 
+    make all text in footer white
+*/
+
+footer {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/* 
+    classes
+
+    types: user (targeted) class
+           pseudo class, these are attached to elements
+           
+    anchor tags have selveral pseudo classes
+    NOTE! the order in which you code your pseudo classes
+    is very important.
+
+    a:link an unused link
+    a:hover used when cursor hovers over the anchor tag link
+    a:visited used when anchor tag has been clicked on previously
+    a:active used when you are actually clicking the link
+*/
+
+nav ul li a:hover {
+    color: blue;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav ul li a:active {
+    color: red;
+    /*font-weight: bold;
+    font-size: larger; */
+}
+
+.bullet-removal {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul.bullet-removal {
+    list-style-type: none;
+    color: blue;
+}
