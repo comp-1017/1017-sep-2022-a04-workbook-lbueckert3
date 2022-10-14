@@ -27,6 +27,20 @@ nav ul li {
     border-bottom: 1px solid #333333
 }
 
+/*
+    child selectors
+
+    this is an element selector within another element that is
+    not necessarily directly below the parent element selector
+
+    upper html element (parent)
+    within the parent some html element
+*/
+
+main p {
+    font-style: italic;
+}
+
 /* 
     to remove the underline of an anchor tag, we are going to use 
     "text-decoration; none;" 
@@ -53,6 +67,13 @@ footer a {
 
 /* 
     classes
+
+    syntax for naming is .user-name{rules}
+    you are NOT using element names
+    user name must be meaningful
+    classes can be attached to any element
+    classes are independent of an element
+    on html page to use: class="user-name [user name]"
 
     types: user (targeted) class
            pseudo class, these are attached to elements
@@ -84,7 +105,23 @@ nav ul li a:active {
     padding: 10px;
 }
 
+/* 
+    targetted class
+    element .classname
+*/
+
 nav ul.bullet-removal {
-    list-style-type: none;
+    /*list-style-type: none;*/
     color: blue;
 }
+
+/*
+    id selector
+
+    similiar to a class selector but is supposed to be 
+    used only once on a page, where as a class it may be 
+    used mulitiple times.
+
+    syntax #user-name{rules}
+    on the html page: id="user-name"
+*/
