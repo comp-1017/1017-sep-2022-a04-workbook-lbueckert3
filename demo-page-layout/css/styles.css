@@ -3,8 +3,31 @@ body {
 }
 
 .container {
-	margin:0 auto;
-	width:960px;
+	margin: 0 auto;
+	width: 960px;
 	font-size: 100%;
 	line-height: 1.5;
+}
+
+/*
+	Typography
+	affects the style of text
+*/
+
+h1, h2 {
+	padding: 10px;
+	text-align: center;
+	font-family: arial, san-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #747474;
+}
+
+/*
+	Layout
+*/
+
+nav {
+	margin-top: 48px;
+	background-color: #ddd;
 }
