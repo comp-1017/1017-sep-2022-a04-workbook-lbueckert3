@@ -1,5 +1,7 @@
-main {    background-color: lightgray;
+main {    
+    background-color: lightgray;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* 
@@ -26,6 +28,28 @@ main {    background-color: lightgray;
     940 = content
 */
 
+/* 
+    default display of elements is called "stacked" 
+    to get your element on the same line, we use something called flexbox
+    to invoke flexbox, use the rule: 
+        display: flex;
+    flexbox attempts to place all elements within it's "specified 
+    container area" on the same line.
+
+    flexbox will automatically adjust measurements to get all elements
+    to appear on the same line.
+
+    problem: I don't want all elements on the same line.
+             I don't want my measurements adjusted 
+    solutions: use flex-wrap: wrap;
+    this will place as many elements as possible on a single row
+        without adjusting the measurements of your element, and any
+        leftover elements will wrap to the following line until 
+        all elements have been displayed.
+    flex-wrap affects a flex display area, without the display: flex; 
+        flex-wrap is meaningless.
+    
+*/
 main > div {
     height: 200px;
     width: 465px;
@@ -44,22 +68,14 @@ main > div {
 .black-paint {
     background-color: black;
     width: 940px;
-    height: 50px;
+    height: 60px;
     margin: 0px 10px 10px 10px;
 }
 
-.yellow-border {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    border: 1px solid yellow;
-    flex-basis: content;
-}
 
 footer {
     background-color: lightgray;
-    height: 60px;
+    height: 70px;
     display: flex;
 }
 
