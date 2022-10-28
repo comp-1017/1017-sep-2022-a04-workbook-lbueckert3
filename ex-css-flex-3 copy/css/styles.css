@@ -22,13 +22,13 @@ h1 {
 /* YOUR STYLES */
 
 /*
-	960 = lb + (lm + lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + rp + rb + rm) + rb
-	960 = 2 + (10 + 2 + 0 + content + 0 + 2 + 10) + (0 + 2 + 0 + content + 0 + 2 + 10) + (0 + 2 + 0 + content + 0 + 2 + 10) + 2
-	960 = 56 + content + content + content
-	960 - 56 = content + content + content 
-	904 = content + content + content
-	904/3 = 280
-	content = 301.33333333...
+	content1 = 150
+	960 = lb + (lm + lb + lp + content1 + rp + rb + rm) + 
+			(lm + lb + lp + content2 + rp + rb + rm) + rb
+	960 = 2 + (10 + 2 + 0 + 150 + 0 + 2 + 10) + (0 + 2 + 0 + content + 0 + 2 + 10) + 2
+	960 = 192 + content2
+	960 = 768
+	content = 768
 */
 main {
 	background-color: lightgray;
@@ -37,13 +37,18 @@ main {
 	flex-wrap: wrap;
 }
 
+aside {
+	margin: 10px 0 10px 10px;
+	border: 2px black solid;
+}
 
 main > div {
     height: 300px;
-    width: 301.333px;
+    width: 768px;
     margin: 10px 0 10px 10px;
 	border: 2px black solid;
 }
+
 
 .red-paint {
     background-color: red;
@@ -51,9 +56,18 @@ main > div {
 
 .blue-paint {
     background-color: blue;
+	width: 768px;
 }
 
 .yellow-paint {
     background-color: yellow;
 }
 
+.boxsize {
+	height: 600px;
+	width: 150px;
+}
+
+.boxsize-two {
+	display: flex;
+}
