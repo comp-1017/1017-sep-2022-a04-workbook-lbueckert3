@@ -29,6 +29,10 @@ h1 {
 	960 = 192 + content2
 	960 = 768
 	content = 768
+
+	600 = tb + (tm + tb + tp + content1 + bp + bb + bm) + (tm + tb + tp + content2 + bp + bb + bm) + bb
+	600 = 2 + (10 + 2 + 0 + content1 + 0 + 2 + 10) + (0 + 2 + 0 + conent2 + 0 + 2 + 10) + 2
+	600 = 24 + {...}
 */
 main {
 	background-color: lightgray;
@@ -50,6 +54,7 @@ main > div {
 }
 
 
+
 .red-paint {
     background-color: red;
 }
@@ -57,10 +62,13 @@ main > div {
 .blue-paint {
     background-color: blue;
 	width: 768px;
+	height: 292px;
 }
 
 .yellow-paint {
     background-color: yellow;
+	width: 768px;
+	height: 292px
 }
 
 .boxsize {
@@ -68,6 +76,12 @@ main > div {
 	width: 150px;
 }
 
-.boxsize-two {
+
+.contentsize {
 	display: flex;
+	flex-direction: column;
+	margin: 10px 0 10px 10px;
+	width: 768px;
+	height: 584px;
+	border: 2px black solid;
 }
