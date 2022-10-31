@@ -32,7 +32,10 @@ h1 {
 
 	600 = tb + (tm + tb + tp + content1 + bp + bb + bm) + (tm + tb + tp + content2 + bp + bb + bm) + bb
 	600 = 2 + (10 + 2 + 0 + content1 + 0 + 2 + 10) + (0 + 2 + 0 + conent2 + 0 + 2 + 10) + 2
-	600 = 24 + {...}
+	600 = 42 + content 1 + content 2
+	600 - 42 = content 1 + content 2
+	558 = content 1 + content 2
+	558/2 = 279
 */
 main {
 	background-color: lightgray;
@@ -62,13 +65,13 @@ main > div {
 .blue-paint {
     background-color: blue;
 	width: 768px;
-	height: 292px;
+	height: 279px;
 }
 
 .yellow-paint {
     background-color: yellow;
 	width: 768px;
-	height: 292px
+	height: 279px;
 }
 
 .boxsize {
