@@ -46,7 +46,7 @@ main > div {
 
     *recalc*
     960 = (lm + lb + lp + content1 + rp + rb + rm) + (lm + lb + lp + content2 + rp + rb + rm)
-    960 = (15 + 2 + 10 + (content1,276) + 10 + 2 + 15) + (0 + 2 + 10 + content2 + 10 + 2 + 15)
+    960 = (15 + 2 + 10 + (276) + 10 + 2 + 15) + (0 + 2 + 10 + content2 + 10 + 2 + 15)
     960 = 369 + content2
     960 - 369 = content2
     591 = content2
@@ -62,9 +62,9 @@ main > div {
     960 - 132 = content1 + content2 + content3
     828 = content1 + content2 + content3
     828/3 = content
-    content = 276
+    276 = content
 
-    bottom row
+    bottom row (1 box full length)
 
     960 = (lm + lb + lp + content + rp + rb + rm)
     960 = (15 + 2 + 10 + content + 10 + 2 + 15)
@@ -115,8 +115,6 @@ main > div {
 }
 
 .top-row{
-    display: flex;
-    flex-wrap: flex;
     margin: 15px 15px 0 15px;
 }
 
