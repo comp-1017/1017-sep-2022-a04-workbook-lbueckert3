@@ -1,0 +1,24 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/* 
+	960 = (lm + lb + lp + contentA + rp + rb + rm) 
+			+ (lm + lb + lp + contentB + rp + rb + rm)
+			+ (lm + lb + lp + contentC + rp + rb + rm)
+			+ (lm + lb + lp + contentD + rp + rb + rm)
+			+ (lm + lb + lp + contentE + rp + rb + rm)
+	960 = (15 + 2 + 0 + contentA + 0 + 2 + 15) 
+			+ (0 + 2 + 0 + contentB + 0 + 2 + 15)
+			+ (0 + 2 + 0 + contentC + 0 + 2 + 15)
+			+ (lm + lb + lp + contentD + 0 + 2 + 15)
+			+ (lm + lb + lp + contentE + rp + rb + rm)
+
+*/
