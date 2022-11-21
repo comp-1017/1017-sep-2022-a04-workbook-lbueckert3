@@ -1,0 +1,98 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/* styling within header */
+
+header {
+	height: 70px; /* height gives a physical size to the element*/
+	background-color: white;
+	border-bottom: 1px solid #959372;
+}
+
+header > h1 {
+	display: none;
+}
+
+/* 
+	create a specific class for hiding items on your page using a class that allows you to reuse the rule whenever it is required.
+	where as specifiying on an element selector may mean repeating the rule.
+
+	.hidden {
+		display: none;
+	}
+*/
+
+
+header >  img {
+	margin: 8px;
+}
+
+/*
+	add the pattern behind the nav area
+	since the nav tag has the banner class, I decided to encapsulate the nav within a div tag and place the class containing the pattern on the div.
+*/
+
+.navpattern {
+	background: url(../img/pattern-bg.gif) repeat;
+	height: 690px;
+	padding-top: 60px;
+}
+
+/*
+	stying on the banner
+	move the banner down by using the margin-top
+	add the background image
+	adjust the height (content height) to image size
+	add padding to move content to the right inside the box
+	need to adjust the physical height of the content to account for the padding that was added to move the nav menu/ title down 60 px
+
+	480 - 60 px padding = 420px
+*/
+
+.banner {
+	margin-top: 60px;
+	padding: 60px 0 0 690px;
+	background-image: url(../img/flower-banner.jpg);
+	height: 420px;
+}
+
+.banner h2 {
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+	color: #f9ea4f;
+}
+
+/* 
+	styling the anchor tag
+	target the anchor link directly to remove default underline and color
+*/
+
+.banner a {
+	text-decoration: none; /* removes the underline from the anchor tag */
+	color: #faf9f8;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* 
+	use the hover pseudoclass of the anchor tag to alter the color of the anchor text when the cursor is over the tag 
+	this will draw the user's attention to the link	
+*/
+
+.banner a:hover {
+	color: #f9ea4f; /* changes color of text when the cursor is hovering over it */
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.banner li {
+	line-height: 40px; /* sets the physical line height of the element*/
+}
