@@ -1,3 +1,9 @@
+/*
+	fonts used
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Alegreya', serif;
+*/
+
 body {
 	background-color: white;
 }
@@ -7,9 +13,36 @@ body {
 	width:960px;
 	font-size:100%;
     line-height: 1.5;
-	
+	font-family: 'Raleway', sans-serif;
+	color: #f1f7f6;
 }
 
 .visuallyhidden {
 	display: none;
+}
+
+/*
+	header section
+*/
+
+header { 
+	background-color: #028568;
+}
+
+header .logo {
+	margin: 10px;
+}
+nav a {
+	text-decoration: none;
+	color: #f1f7f6;
+}
+
+nav li {
+	font-size: 18px;
+	/*line-height: 75px;*/
+	margin-right: 30px;
+}
+
+nav ul {
+
 }
