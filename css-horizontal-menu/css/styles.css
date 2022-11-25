@@ -100,25 +100,30 @@ header a:hover {
 	Right column
 */
 
-.banner .right-column {
+.right-column {
 	width: 216px;
 	padding: 85px 83px 0 83px;
 	background-color: rgba( 171, 221, 223, 0.8); /* rgb colours, and then opacity */
 }
 
-.banner .right-column h2 {
+.right-column h2 {
 	line-height: 44px;
 }
 
-.banner a {
+/* 
+	an anchor tag is an in-line element which margin-bottom doesn't directly affect
+	change display style of element to be blocked
+*/
+
+.right-column a {
 	padding: 9px 38px;
 	margin-bottom: 65px;
-	display: inline-block;
+	display: inline-block; 
 	text-decoration: none;
 	text-align: center;
 	background-color: #fff;
 	color: #028568;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 
 .banner a:hover {
