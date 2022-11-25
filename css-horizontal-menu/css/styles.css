@@ -123,9 +123,9 @@ header a:hover {
 	text-align: center;
 	background-color: #fff;
 	color: #028568;
-	border-radius: 6px;
+	border-radius: 6px; /* rounds corners of box */
 }
 
-.banner a:hover {
+.right-column a:hover {
 	padding: 9px 33px 9px 43px;
 }
